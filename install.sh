@@ -1,12 +1,4 @@
-#!/usr/bin/env bash
-#
-# install.sh — symlink these dotfiles into ~/.config
-#
-# Usage:
-#   ./install.sh           # install, backing up any existing configs
-#   ./install.sh --force   # install, overwriting existing configs (no backup)
-#
-# Existing targets that are already correct symlinks are left untouched.
+#!/bin/bash
 
 set -euo pipefail
 
@@ -21,8 +13,6 @@ elif [[ -n "${1:-}" ]]; then
     exit 2
 fi
 
-# Each line maps a path relative to the repo (source) to a path relative to
-# $CONFIG_HOME (destination). Fields are separated by a tab.
 MAPPINGS="$(cat <<'EOF'
 alacritty/alacritty.toml	alacritty/alacritty.toml
 alacritty/themes	alacritty/themes
