@@ -20,6 +20,7 @@ helix/config.toml	helix/config.toml
 helix/languages.toml	helix/languages.toml
 yazi/package.toml	yazi/package.toml
 yazi/theme.toml	yazi/theme.toml
+yazi/yazi.toml	yazi/yazi.toml
 yazi/flavors	yazi/flavors
 zellij/config.kdl	zellij/config.kdl
 EOF

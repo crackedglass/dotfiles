@@ -1,4 +1,7 @@
 
+[language-server.gopls.config]
+"formatting.gofumpt" = true
+
 [[language]]
 name = "javascript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
@@ -69,3 +72,18 @@ block-comment-tokens = { start = "/*", end = "*/" }
 language-servers = [ "clangd" ]
 indent = { tab-width = 2, unit = "  " }
 formatter = { command = "clang-format" }
+
+[[language]]
+name = "nix"
+formatter = { command = "alejandra" }
+auto-format = true
+
+[[language]]
+name = "rust"
+formatter = { command = "rustfmt" }
+auto-format = true
+
+[[language]]
+name = "typst"
+formatter = { command = "typstyle" }
+auto-format = true
